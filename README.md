@@ -4,7 +4,7 @@ my Solutions of Leetcode
 *1. Two Sum (C++)
 https://leetcode.com/problems/two-sum/
 
-*7. Reverse Integer (Python)
+* 7. Reverse Integer (Python)
 https://leetcode.com/problems/reverse-integer/
 
 9. Palindrome Number (Python)
