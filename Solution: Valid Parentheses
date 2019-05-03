@@ -1,0 +1,63 @@
+class Solution(object):
+    def isValid(self, s):
+        """
+        :type s: str
+        :rtype: bool
+        """
+        stack = Stack([])
+        for i in range(0,len(s)):
+            if s[i] == "(" or s[i] == "[" or s[i] == "{":
+                stack.push(s[i])
+            elif s[i] == ")":
+                if stack.empty():
+                    return False
+                    exit
+                else:
+                    if stack.pop() == "(":
+                        continue
+                    else:
+                        return False
+                        exit
+            elif s[i] == "]":
+                if stack.empty():
+                    return False
+                    exit
+                else:
+                    if stack.pop() == "[":
+                        continue
+                    else:
+                        return False
+                        exit
+            elif s[i] == "}":
+                if stack.empty():
+                    return False
+                    exit
+                else:
+                    if stack.pop() == "{":
+                        continue
+                    else:
+                        return False
+                        exit
+        if stack.empty():
+            return True
+                
+            
+class Stack:
+    def __init__(self, data):
+        # data = []
+        # for i in range(0,len(string)):
+        #     data.append(string[i])
+        self._data = list(data)
+    def push(self,item):
+        self._data.append(item)
+    def pop(self):
+        item = self._data[-1]
+        del self._data[-1]
+        return item
+    def toString(self):
+        print self._data
+    def empty(self):
+        if not self._data:
+            return True   # empty
+        else:
+            return False
