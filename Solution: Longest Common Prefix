@@ -1,0 +1,40 @@
+class Solution(object):
+    def longestCommonPrefix(self, strs):
+        """
+        :type strs: List[str]
+        :rtype: str
+        """
+        if len(strs)<1: # 空字串
+            return ""
+            exit(0)
+        
+        short=min(strs,key=len) # 取list中最短的string
+        
+        short_len=len(short)
+        longest=0
+        length=1
+        flag=1
+        while flag==1:
+            for s in strs:
+                if short[0:length] != s[0:length]:  # prefix
+                    flag=0
+                    break
+                else:
+                    flag=1
+            if flag==1:
+                if length+1>short_len:
+                    flag=2
+                    length=length+1
+                    break
+                else:
+                    length=length+1
+            else:
+                break
+                
+        if longest<length-1:
+            longest=length-1
+            
+        if short[0:longest] is None:
+            return ""
+        else:
+            return short[0:longest]
