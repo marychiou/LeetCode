@@ -1,0 +1,26 @@
+class Solution(object):
+    def romanToInt(self, s):
+        """
+        :type s: str
+        :rtype: int
+        """
+        list=[]
+        for i in range(len(s)):
+            if s[i]=='I':
+                list.append(1)
+            elif  s[i]=='V':
+                list.append(5)
+            elif  s[i]=='X':
+                list.append(10)
+            elif  s[i]=='L':
+                list.append(50)
+            elif  s[i]=='C':
+                list.append(100)
+            elif  s[i]=='D':
+                list.append(500)
+            elif  s[i]=='M':
+                list.append(1000)
+        for i in range(len(list)-1):
+            if list[i] < list[i+1]:
+                list[i]=list[i]*-1
+        return sum(list)
