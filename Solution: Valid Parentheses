@@ -44,9 +44,6 @@ class Solution(object):
             
 class Stack:
     def __init__(self, data):
-        # data = []
-        # for i in range(0,len(string)):
-        #     data.append(string[i])
         self._data = list(data)
     def push(self,item):
         self._data.append(item)
