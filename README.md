@@ -18,3 +18,6 @@ https://leetcode.com/problems/longest-common-prefix/
 
 **20. Valid Parentheses (Python)**
 https://leetcode.com/problems/valid-parentheses/
+
+**136. Single Number (C++)**
+https://leetcode.com/problems/single-number/
