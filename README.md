@@ -19,5 +19,14 @@ https://leetcode.com/problems/longest-common-prefix/
 **20. Valid Parentheses (Python)**
 https://leetcode.com/problems/valid-parentheses/
 
+**53. Maximum Subarray**
+https://leetcode.com/problems/maximum-subarray/
+
 **136. Single Number (C++)**
 https://leetcode.com/problems/single-number/
+
+**202. Happy Number**
+https://leetcode.com/problems/happy-number/
+
+**283. Move Zeroes**
+https://leetcode.com/problems/move-zeroes/
