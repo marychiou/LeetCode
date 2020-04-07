@@ -19,6 +19,9 @@ https://leetcode.com/problems/longest-common-prefix/
 **20. Valid Parentheses (Python)**
 https://leetcode.com/problems/valid-parentheses/
 
+**49. Group Anagrams (C++)**
+https://leetcode.com/problems/group-anagrams/
+
 **53. Maximum Subarray (C++)**
 https://leetcode.com/problems/maximum-subarray/
 
