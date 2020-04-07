@@ -1,0 +1,50 @@
+struct Group
+{
+    string str;
+    int grp;
+};
+
+
+class Solution {
+public:
+    vector<vector<string>> groupAnagrams(vector<string>& strs) {
+
+        // give every string a group number
+        Group group[strs.size()];
+
+        // vector to save sorting strings, use index for Grouping  
+        vector<string> sortStr;
+        string temp;
+        vector<string>::iterator it_sortStr;
+        int numGrp;
+
+        int size = -1; // the size of vector<vector<string>>
+
+        for (int i = 0; i < strs.size(); i++) {
+            temp = strs.at(i);
+            sort(temp.begin(), temp.end());
+            it_sortStr = find(sortStr.begin(), sortStr.end(), temp);
+            if (it_sortStr != sortStr.end())
+                numGrp = distance(sortStr.begin(), it_sortStr);
+            else {
+                sortStr.push_back(temp);
+                numGrp = sortStr.size() - 1;
+                if (size < numGrp)
+                    size = numGrp;
+            }
+            group[i].str = strs.at(i);
+            group[i].grp = numGrp;
+            //cout << strs.at(i) << " group: " << numGrp << endl;
+        }
+
+
+        size++;
+        vector<vector<string>> GroupAnagrams(size);
+
+        for (int i = 0; i < strs.size(); i++) {
+            GroupAnagrams[group[i].grp].push_back(group[i].str);
+        }
+
+        return GroupAnagrams;
+    }
+};
