@@ -36,3 +36,6 @@ https://leetcode.com/problems/happy-number/
 
 **283. Move Zeroes (C++)**
 https://leetcode.com/problems/move-zeroes/
+
+**876. Middle of the Linked List (C++)**
+https://leetcode.com/problems/middle-of-the-linked-list/
