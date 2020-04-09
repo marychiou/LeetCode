@@ -37,5 +37,8 @@ https://leetcode.com/problems/happy-number/
 **283. Move Zeroes (C++)**
 https://leetcode.com/problems/move-zeroes/
 
+**844. Backspace String Compare (C++)**
+https://leetcode.com/problems/backspace-string-compare/
+
 **876. Middle of the Linked List (C++)**
 https://leetcode.com/problems/middle-of-the-linked-list/
