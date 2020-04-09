@@ -1,0 +1,24 @@
+class Solution {
+public:
+    
+    vector<char> getString(string S) {
+        
+        vector<char> vS;
+        
+        for (int i = 0; i < S.length(); i++) {
+            if (S[i] == '#' && !vS.empty()){
+                vS.pop_back();
+            }
+            else if (S[i] != '#')
+                vS.push_back(S[i]);
+        }
+        
+        return vS;
+    }
+    
+    bool backspaceCompare(string S, string T) {
+        
+        return getString(S) ==getString(T);
+        
+    }
+};
