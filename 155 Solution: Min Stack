@@ -1,0 +1,46 @@
+class MinStack {
+private:
+    int stack[200000];
+    int size;
+    
+public:
+    /** initialize your data structure here. */
+    MinStack() {
+        memset(stack, 0, sizeof(stack));
+        size = 0;
+    }
+    
+    void push(int x) {
+        stack[size] = x;
+        size++;
+    }
+    
+    void pop() {
+        size--;
+        stack[size] = 0;
+    }
+    
+    int top() {
+        return stack[size - 1];
+    }
+    
+    int getMin() {
+        
+        int Min = stack[0];
+        
+        for (int i = 0; i <size; i++){
+            if (stack[i] < Min)
+                Min = stack[i];
+        }
+        return Min;
+    }
+};
+
+/**
+ * Your MinStack object will be instantiated and called as such:
+ * MinStack* obj = new MinStack();
+ * obj->push(x);
+ * obj->pop();
+ * int param_3 = obj->top();
+ * int param_4 = obj->getMin();
+ */
