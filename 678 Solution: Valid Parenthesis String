@@ -1,0 +1,26 @@
+class Solution {
+    public boolean checkValidString(String s) {
+        
+        String leftStr = s;
+        String rightStr = s;
+        leftStr = leftStr.replace('*','(');
+        rightStr = rightStr.replace('*',')');
+        int leftCount = 0;
+        int rightCount = 0;
+        
+        for(int i = 0; i < leftStr.length(); i++) {
+            if (leftStr.charAt(i) == '(') leftCount++;
+            else if (leftStr.charAt(i) == ')') leftCount--;
+            if (leftCount < 0) return false;
+        }
+        if (leftCount == 0) return true;
+        else {
+            for(int i = rightStr.length()-1 ; i >= 0; i--) {
+                if (rightStr.charAt(i) == ')') rightCount++;
+                else if (rightStr.charAt(i) == '(') rightCount--;
+                if (rightCount < 0) return false;
+            }
+            return true;
+        }
+    }
+}
