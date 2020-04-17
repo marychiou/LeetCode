@@ -46,6 +46,9 @@ https://leetcode.com/problems/move-zeroes/
 **525. Contiguous Array (JAVA)**
 https://leetcode.com/problems/contiguous-array/
 
+**678. Valid Parenthesis String**
+https://leetcode.com/problems/valid-parenthesis-string/
+
 **844. Backspace String Compare (C++)**
 https://leetcode.com/problems/backspace-string-compare/
 
