@@ -57,3 +57,6 @@ https://leetcode.com/problems/middle-of-the-linked-list/
 
 **1046. Last Stone Weight (C++)**
 https://leetcode.com/problems/last-stone-weight/
+
+**2236. Root Equals Sum of Children (Python)**
+https://leetcode.com/problems/root-equals-sum-of-children/
